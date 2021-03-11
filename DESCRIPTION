@@ -12,3 +12,5 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: R (>= 4.0.4), tidyverse, janitor
+URL: https://github.com/jpb2210/eHArS
+BugReports: https://github.com/jpb2210/eHArS/issues
