@@ -1,0 +1,14 @@
+Package: eHArS
+Date: 2021-03-10
+Title: An R Package for Working with eHARS HIV/AIDS Data
+Version: 0.0.1
+Author: person("Jon", "Brock", role = c("Epidemiologist-Biostatistician", "MPH"), email = "jonathan.brock@sonoma-county.org")
+Description: This package makes life a little easier for those health department epidemiologists 
+    and data analysts when working with HIV/AIDS data from eHARS.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: R (>= 4.0.4), tidyverse, janitor
