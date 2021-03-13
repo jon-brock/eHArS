@@ -3,10 +3,12 @@
 
 string_to_date <- function(x) {
 
-    r_year <- str_sub(x, start = 1, end = 4)
-    r_month <- str_sub(x, start = 5, end = 6)
-    r_day <- str_sub(x, start = 7, end = 8)
+    std_year <- if_else(str_sub(x, start = 1, end = 4) == "", "....", str_sub(x, start = 1, end = 4))
+    std_month <- if_else(str_sub(x, start = 5, end = 6) == "", "..", str_sub(x, start = 5, end = 6))
+    std_day <- if_else(str_sub(x, start = 7, end = 8) == "", "..", str_sub(x, start = 7, end = 8))
 
-    r_date <- paste0(r_month, '/', r_day, '/', r_year)
+    std_date <- paste0(std_month, '/', std_day, '/', std_year)
+
+    return(std_date)
 
 }
