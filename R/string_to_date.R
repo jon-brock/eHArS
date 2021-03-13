@@ -1,6 +1,9 @@
-## Convert eHARS dates (YYYYMMDD) to MM/DD/YYYY
-## eHARS dates often include '..' for missing months and days
-
+#' Convert eHARS dates (as character variables) into formatted dates (as character variables)
+#'
+#' @param x A tibble with data imports from an eHARS .sasb7dat file
+#' @return All date variables in the dataset from (yyyymmdd) to (mm/dd/yyyy) accounting for missing values ('..' or '....')
+#'
+#' @export
 string_to_date <- function(x) {
 
     std_year <- if_else(str_sub(x, start = 1, end = 4) == "", "....", str_sub(x, start = 1, end = 4))
